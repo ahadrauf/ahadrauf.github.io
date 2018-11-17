@@ -18,6 +18,21 @@
          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+      
+      <!-- MathJAX -->
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { fonts: ["TeX"] }
+      });
+      </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
   </head>
   <body>
      <div class="container">
@@ -155,11 +170,6 @@
                     </ul>
                  </div>
               </div>
-           </div>
-           <div class="col-sm-2">
-              <!--<img src="http://placehold.it/225x100?text=Ad+goes+here" alt="A really cool ad used to fill this space. Come back later to see it!">-->
-              <p><br></p> <!--Temporary buffer zone-->
-              <!--<img src="http://placehold.it/225x100?text=Ad+goes+here" alt="A really cool ad used to fill this space. Come back later to see it!">-->
            </div>
         </div>
      </div>
