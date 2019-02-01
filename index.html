@@ -46,7 +46,8 @@
     <body>
         <div class="container">
             <div class="page-header">
-                <h1 height="15vh"><a href=""><img src="images/logo.png" alt="Foothill Senior Class Page" class="hidden-xs hidden-sm"><img src="images/logo_sm.png" alt="Foothill Senior Class Page" class="visible-xs visible-sm"></a>  Home</h1>
+                <h1 height="15vh"><a href="">Ahad Rauf</a></h1>
+                <h3 height="10vh"><a href="">Undergraduate EECS Major, UC Berkeley</a></h3>
             </div>
             <div class="row">
                 <div class="col-sm-2">
@@ -55,6 +56,7 @@
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
+                                    <!--Add the three horizontal bars onto the button in the collapsed form-->
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
@@ -75,14 +77,35 @@
                                         </ul>
                                     </li>
                                     <li><a href="./pictures/">Pictures</a></li>
-                                    <li><a href="./contact-us/">Contact Us</a></li>
+                                    <!--<li><a href="./contact-us/">Contact Me</a></li>-->
                                 </ul>
                             </div><!--/.nav-collapse -->
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-sm-10">
+                    Hi there, my name's Ahad Rauf.
+                    <br>
+                    I'm an undergraduate junior in EECS at UC Berkeley focused primarily on micrometer-scale robots, 
+                    commonly known as microrobots. While I've worked for many years on robotics projects of all scales, 
+                    from developing a computer vision system for autonomous vehicles to building a prosthetic robotic arm 
+                    to designing a 2 cm drone, I especially enjoy microrobots for the unique challenges in fabricating and 
+                    controlling structures at such small scales. I get super excited seeing beams thinner than a human hair
+                    learn to walk on water, jump, and even fly, and I look forward to helping push this development further 
+                    through my research and studies.
+                    
+                    <a href="<?php echo $DOWNLOADS; ?>Resume - Ahad Rauf.pdf" target="_blank" rel="noopener noreferrer" 
+                        class="btn" role="button">RESUME</a>
+                    <a href="https://www.linkedin.com/in/ahadrauf/" target="_blank" rel="noopener noreferrer" class="btn" 
+                        role="button">LINKEDIN</a>
+                    <a href="https://github.com/ahadrauf" target="_blank" rel="noopener noreferrer" class="btn" 
+                        role="button">GITHUB</a>
+                </div>
+                
+                
 
-           
+                <!--
                 <div class="col-sm-5">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -90,7 +113,7 @@
                             <h4 style="margin-bottom: 0; font-size: 1.15em;">Click the event titles for more information about each event</h4>
                         </div>
                         <div class="panel-body panel-scroll panel-lg primary-headers" id="important-events">
-                            <!-- Filled using JS in bootstrap.css -->
+                            <!-- Filled using JS in bootstrap.css --><!--
                         </div>
                     </div>
                 </div>
@@ -120,9 +143,9 @@
                 </div>
 
                 <div id="advertisements"></div>
+                -->
                 <!--<img src="http://placehold.it/225x100?text=Ad+goes+here" alt="A really cool ad was used to fill this space. Come back later to see it!">-->
                 <!--<img src="http://placehold.it/225x100?text=Ad+goes+here" alt="A really cool ad was used to fill this space. Come back later to see it!">-->  
-         
             </div>
         </div>
     </div>
@@ -131,7 +154,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Gets events in the next 4 weeks for display -->
-    <script src="js/events_list.js"></script>
+    <!-- Gets events in the next 4 weeks for display (disabled) -->
+    <!-- <script src="js/events_list.js"></script> -->
     </body>
 </html>
