@@ -1,4 +1,5 @@
 var pictures = [
+    /*
     {
         name: "Grad Nite 2015", folder: "grad nite 2015", id: "grad-nite-2015",
         pics: ["image1.jpeg", "image2.jpeg", "image7.jpeg", "image5.jpeg", "image3.jpeg",
