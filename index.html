@@ -7,14 +7,16 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Home | Ahad Rauf</title>
 
-        <!-- File locations -->
-        <?php $imageFolder = "./images/"; ?>
-        <?php $downloadsFolder = "./downloads/"; ?>
-        <?php $cssFolder = "./css/"; ?>
-        <?php $jsFolder = "./js/"; ?>
+        <!-- File locations (check for every file) -->
+        <?php $HOME = "."; ?>
+        <!-- File locations (relative to the $HOME variable above) -->
+        <?php $IMAGES = "$HOME/images"; ?>
+        <?php $DOWNLOADS = "$HOME/downloads"; ?>
+        <?php $CSS = "$HOME/css"; ?>
+        <?php $JS = "$HOME/js"; ?>
 
         <!-- <link rel="icon" type="image/png" href="./images/falcon.png"> -->-
-        <link rel="icon" type="image/png" href="<?php echo $imageFolder; ?>falcon.png">
+        <link rel="icon" type="image/png" href="<?php echo $IMAGES; ?>falcon.png">
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -106,7 +108,7 @@
                                 from my math, physics, and engineering college courses that I copied 
                                 to the web for easy reference. Enjoy looking around, and feel free to 
                                 shoot me a message if you notice any errors or want to say hi.
-
+                                <br>
                                 This page is still under development, and hopefully I'll add a lot more content 
                                 and pictures to it in the upcoming weeks. For now, you may find some of the links
                                 are broken or some of the content looks odd (I copied this page format from the 
