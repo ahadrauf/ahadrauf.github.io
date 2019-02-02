@@ -6991,3 +6991,7 @@ div.pictures img {
 #home_page_header {
     font-size: 1.25em;
 }
+
+.no_bottom_margin {
+    margin-bottom: 0px;
+}
