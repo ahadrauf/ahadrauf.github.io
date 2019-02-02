@@ -6992,6 +6992,7 @@ div.pictures img {
     font-size: 1.25em;
 }
 
-.no_bottom_margin {
+.no_vertical_margins {
+    margin-top: 0px;
     margin-bottom: 0px;
 }
