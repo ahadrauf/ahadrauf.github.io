@@ -16,10 +16,10 @@
         <?php $JS = "$HOME/js"; ?>
 
         <!-- <link rel="icon" type="image/png" href="./images/falcon.png"> -->
-        <link rel="icon" type="image/png" href="../../images/logo.PNG">
+        <link rel="icon" type="image/png" href="../images/logo.png">
 
         <!-- Bootstrap -->
-        <link href="../../css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,6 +29,7 @@
         <![endif]-->
       
         <!-- MathJAX (uncomment the lines below if MathJAX is needed) -->
+        <!--
         <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
         extensions: ["tex2jax.js"],
@@ -42,15 +43,16 @@
         });
         </script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        -->
     </head>
     <body>
         <div class="container">
             <div class="page-header">
-                <a href="../../">
+                <a href="">
                     <div class="row">
                         <table>
                             <tr>
-                                <td><img src="../../images/logo_transparent.png" height="60vh"><td>
+                                <td><img src="../images/logo_transparent.png" height="60vh"><td>
                                 <td>
                                     <h1 height="15vh" class="no_vertical_margins">&nbsp;&nbsp;Ahad Rauf</h1>
                                     <h3 height="10vh" class="no_vertical_margins">&nbsp;&nbsp;Undergraduate EECS Major, 
@@ -77,18 +79,18 @@
                             </div>
                             <div class="navbar-collapse collapse sidebar-navbar-collapse">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="../../">Home<span class="sr-only">(current)</span></a></li>
+                                    <li><a href="../">Home<span class="sr-only">(current)</span></a></li>
                                     <li class="dropdown">
-                                        <a class="dropdown-toggle active" data-toggle="dropdown" href="../">
-                                            Courses
+                                        <a class="dropdown-toggle active" data-toggle="dropdown" href="">
+                                            References
                                             <span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li class="active"><a href="">Math</a></li>
-                                            <li><a href="../electromagnetism/">Electromagnetism</a></li>
+                                            <li><a href="./math/">Math</a></li>
+                                            <li><a href="./electromagnetism/">Electromagnetism</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="../../pictures/">Pictures</a></li>
+                                    <li><a href="../pictures/">Pictures</a></li>
                                     <!--<li><a href="./contact-us/">Contact Me</a></li>-->
                                 </ul>
                             </div><!--/.nav-collapse -->
@@ -96,26 +98,28 @@
                     </div>
                 </div>
 
-                <div class="col-sm-10">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h2 class="panel-title">One of the Infinite Possible Categories of Physics</h2>
-                        </div>
-                        <div class="panel-body panel-scroll panel-lg primary-headers">
-                            <table class="table table-hover nice-links" id="divergence_curl_properties">
-                                <tbody id="table-body">
-                                    <tr>
-                                        <td> No equations yet! </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+           <div class="col-sm-10">                    
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">References</h2>
+                    </div>
+                    <div class="panel-body panel-scroll panel-lg primary-headers">
+                        These are a collection of references I've put together based on my 
+                        course and work history. They've helped me a lot as a casual online
+                        resource to jog my memory a little or to remember a long equation, 
+                        and hopefully they'll be of use to you as well.
+                        <br>
+                        <ul>
+                            <li><a href="./math/">Math</a></li>
+                            <li><a href="./electromagnetism/">Electromagnetism</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="../../js/bootstrap.min.js"></script>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>

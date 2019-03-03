@@ -16,7 +16,7 @@
         <?php $JS = "$HOME/js"; ?>
 
         <!-- <link rel="icon" type="image/png" href="./images/falcon.png"> -->
-        <link rel="icon" type="image/png" href="../../images/logo.PNG">
+        <link rel="icon" type="image/png" href="../../images/logo.png">
 
         <!-- Bootstrap -->
         <link href="../../css/bootstrap.css" rel="stylesheet">
@@ -80,7 +80,7 @@
                                     <li><a href="../../">Home<span class="sr-only">(current)</span></a></li>
                                     <li class="dropdown">
                                         <a class="dropdown-toggle active" data-toggle="dropdown" href="../">
-                                            Courses
+                                            References
                                             <span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
@@ -148,13 +148,13 @@
                         </div>
                     </div>
                 
-                    <div class="panel panel-primary">
+                    <div class="panel panel-warning">
                             <div class="panel-heading">
                                 <h2 class="panel-title">Coordinate Transformations</h2>
                             </div>
                             <div class="panel-body panel-scroll panel-lg primary-headers">
                                 <table class="table nice-links" id="coordinate_transformations">
-                                    <tbody id="table-body">
+                                    <tbody class="table-body">
                                         <tr>
                                             <td>
                                                 <strong>Cylindrical Coorindates</strong>
@@ -179,7 +179,7 @@
                                                 </table>
                                                 <br>
                                                 Note:
-                                                <table class="table table-hover nice-links">
+                                                <table class="table table-hover table-bordered nice-links">
                                                     <tbody class="table-body">
                                                         <tr>
                                                             <td>$\vec{e_r} = \cos(\phi) \vec{e_x} + \sin(\phi) \vec{e_y}$</td>
@@ -219,7 +219,7 @@
                                                 
                                                 <br>
                                                 Note:
-                                                <table class="table table-hover nice-links">
+                                                <table class="table table-hover table-bordered nice-links">
                                                     <tbody class="table-body">
                                                         <tr>
                                                             <td>$\vec{e_r} = \sin(\theta)\cos(\phi)\vec{e_x} + \sin(\theta)\sin(\phi)\vec{e_y} + \cos(\theta)\vec{e_z}$</td>
@@ -231,7 +231,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td>$\vec{e_\theta} = \cos(\theta)\cos(\phi)\vec{e_x} + \cos(\theta)\sin(\phi)\vec{e_y} - \sin(\theta)\vec{e_z}$</td>
-                                                            <td>$\vec{e_x} = \cos(\theta)\vec{e_r} - \sin(\theta)\vec{e_\theta}$</td>
+                                                            <td>$\vec{e_z} = \cos(\theta)\vec{e_r} - \sin(\theta)\vec{e_\theta}$</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>

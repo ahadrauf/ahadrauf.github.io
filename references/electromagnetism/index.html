@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Home | Ahad Rauf</title>
+
+        <!-- File locations (check for every file) -->
+        <?php $HOME = "."; ?>
+        <!-- File locations (relative to the $HOME variable above) -->
+        <?php $IMAGES = "$HOME/images"; ?>
+        <?php $DOWNLOADS = "$HOME/downloads"; ?>
+        <?php $CSS = "$HOME/css"; ?>
+        <?php $JS = "$HOME/js"; ?>
+
+        <!-- <link rel="icon" type="image/png" href="./images/falcon.png"> -->
+        <link rel="icon" type="image/png" href="../../images/logo.png">
+
+        <!-- Bootstrap -->
+        <link href="../../css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+        <!-- MathJAX (uncomment the lines below if MathJAX is needed) -->
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { fonts: ["TeX"] }
+        });
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <a href="../../">
+                    <div class="row">
+                        <table>
+                            <tr>
+                                <td><img src="../../images/logo_transparent.png" height="60vh"><td>
+                                <td>
+                                    <h1 height="15vh" class="no_vertical_margins">&nbsp;&nbsp;Ahad Rauf</h1>
+                                    <h3 height="10vh" class="no_vertical_margins">&nbsp;&nbsp;Undergraduate EECS Major, 
+                                        UC Berkeley 2016-20</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="sidebar-nav">
+                        <div class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <!--Add the three horizontal bars onto the button in the collapsed form-->
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="visible-xs navbar-brand">Navigation</span>
+                            </div>
+                            <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="../../">Home<span class="sr-only">(current)</span></a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle active" data-toggle="dropdown" href="../">
+                                            References
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../math/">Math</a></li>
+                                            <li class="active"><a href="">Electromagnetism</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../../pictures/">Pictures</a></li>
+                                    <!--<li><a href="./contact-us/">Contact Me</a></li>-->
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Electrostatics</h2>
+                        </div>
+                        <div class="panel-body panel-scroll panel-lg primary-headers">
+                            <table class="table table-hover nice-links" id="electrostatics">
+                                <tbody id="table-body">
+                                    <tr>
+                                        <td>$\vec{F} = \frac{1}{4 \pi \epsilon_0} \frac{Qq}{\lVert \vec{r} - \vec{r'} \rVert^2} \widehat{(\vec{r} - \vec{r'})}$     - Force between two electric charges</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\vec{E} = \frac{\vec{F}}{q} = -\nabla V$     - Definition of electric field and voltage
+                                        <br><br>
+                                        Note: $\nabla \cdot (\vec{E}V) = (\nabla \cdot \vec{E})V - \lVert \vec{E} \rVert^2$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\Delta U = -W = q \Delta V = \frac{1}{2} \int_\mathcal{V} V dq$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\mathfrak{u} = \frac{1}{2}\epsilon_0 E^2 + \int_0^P \vec{E} \cdot \vec{dP} = \frac{1}{2} \epsilon_0\epsilon_r E^2$     - Electric field energy density</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$P = \frac{\sigma^2}{2\epsilon_0}$     - Pressure on the surface of a conductor due to charge distribution
+                                        <br><br>
+                                        Note: $\sigma = \epsilon_0 E$ for conductors</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dipoles:
+                                        <br>
+                                        <img src="../../images/physics/Dipole-Diagram.PNG" alt="Dipole-Diagram" width="118" height="133" />
+                                        <ul>
+                                            <li>$\vec{p} = q\vec{d}$</li>
+                                            <li>$V(\vec{r}) \approx \frac{\vec{p} \cdot \hat{r}}{4\pi\epsilon_0r^2}$</li>
+                                            <li>$\vec{\tau} = \vec{p} \times \vec{E}$</li>
+                                            <li>$U = -\vec{p} \cdot \vec{E}$</li>
+                                            <li>$\sum \vec{F} = \vec{p} \cdot (\nabla \vec{E})$</li>
+                                            <li>$\vec{E}(\vec{r}) = \frac{3(\vec{p} \cdot \hat{r})\hat{r} - \vec{p}}{4\pi\epsilon_0r^3}$</li>
+                                            <li>$U_{p_1, p_2} = \frac{3(\vec{p_1} \cdot \widehat{r_{21}})(\vec{p_2} \cdot \vec{r_{21})} + \vec{p_1} \cdot \vec{p_2}}{4\pi\epsilon_0r_{21}^3}$</li>
+                                            <li>For a conductor, $\vec{E} = 0 \implies \vec{p} = 0$ and $\vec{E} \neq 0 \implies \vec{p} \neq 0$ (and $\lVert \vec{p} \rVert \propto r^3E$)</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Polarization
+                                        <ul>
+                                            <li>$\vec{P} = \frac{1}{\Delta V} \sum\limits_i \vec{p_i} = \epsilon_0\chi_e\vec{E}$     - Polarization = volume-averaged dipole moment</li>
+                                            <li>$\sigma_{b} = \vec{P} \cdot \hat{n} = P_{in}^\bot - P_{out}^\bot$ with $\sigma = \sigma_0 + \sigma_b$</li>
+                                            <li>$\rho_b = -\nabla \cdot \vec{P}$ with $\rho = \rho_0 + \rho_b$</li>
+                                            <li>$\rho_0 = \nabla \cdot \vec{D}$ where $\vec{D} = \epsilon_0 \vec{E} - \vec{P} = \epsilon_0 \epsilon_r \vec{E} = \frac{e_r}{e_r - 1}\vec{P}$ is the displacement vector</li>
+                                            <li>$\oint \vec{D} \cdot \vec{dS} = Q_0$</li>
+                                            <li>$\oint \vec{E} \cdot \vec{dS} = \frac{Q}{\epsilon_0}$     - Gauss' law</li>
+                                            <li>$\rho_0 = \epsilon_r \rho, \rho_b = (1 - \epsilon_r) \rho$</li>
+                                            <li>$\int \rho_b d^3r + \int \sigma_b dS = 0$     - Conservation of Charge</li>
+                                        </ul>
+                                        
+                                        Clarification: Any terms above involving $e_r$ or $\chi_e$ assume we're acting in a linear media
+                                        <br><br>
+                                        Note: Because $\vec{E} = 0$ inside conductors and vacuums, $\vec{P} = 0$ as well (since $\vec{p} = 0$ when $\vec{E} = 0$)
+                                        <br><br>
+                                        Note on notation: Terms like $\sigma_0$ and $\rho_0$ above correspond to the free charge, and terms like $\sigma_b$ and $\rho_b$ correspond to the bias (induced) charge. The term $\sigma$ or $\rho$ referred to in other equations, such as Gauss' law, on this cheat sheet refer to the total charge ($\sigma = \sigma_0 + \sigma_b$ and $\rho = \rho_0 + \rho_b$).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Image Charges
+                                        <ul>
+                                            <li>Image Charge Energy:
+                                        <ol>
+                                            <li>$U = \int_r^\infty F_q(r) dr$</li>
+                                            <li>$U = \frac{1}{2} \int_{\mathbb{R}^3} V dq$</li>
+                                            <li>$U_{q, q'} = U_{q, real} + \textrm{self-energy of conductor}$</li>
+                                        </ol>
+                                        </li>
+                                            <li>Image Charge Solution (with the sphere grounded): $b = \frac{R^2}{a}$ and $q' = -\frac{R}{a}q$ below:</li>
+                                        </ul>
+                                        <img src="../../images/physics/Image-Charge-Example.PNG" alt="image-charge-example.png" width="164" height="130" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boundary Conditions
+                                        <br>
+                                        <img src="../../images/physics/EM-Boundary-Conditions.PNG" alt="em-boundary-conditions.png" width="144" height="144" />
+                                        <ul>
+                                            <li>$E_2^\bot - E_1^\bot = \frac{\sigma}{\epsilon_0}$</li>
+                                            <li>$\vec{E}_1^\parallel = \vec{E}_2^\parallel$</li>
+                                            <li>$\Delta V = 0$</li>
+                                            <li>$D_2^\bot - D_1^\bot = \sigma_0$</li>
+                                            <li>$\vec{D}_2^\parallel - \vec{D}_1^\parallel = -(\vec{P}_2^\parallel - \vec{P}_1^\parallel)$</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Magnetostatics</h2>
+                        </div>
+                        <div class="panel-body panel-scroll panel-lg primary-headers">
+                            <table class="table table-hover nice-links" id="magnetostatics">
+                                <tbody id="table-body">
+                                    <tr>
+                                        <td>$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) = I (\vec{l} \times \vec{B}) = \int \vec{J} \times \vec{B} d^3r$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\vec{J} = \rho \vec{v}$     - Volume current density, $v$ = velocity of charge carrier
+                                        <br><br>
+                                        $\vec{K} = \sigma \vec{v}$    - Surface current density, $\sigma$ = conductivity = $\frac{1}{\rho}$
+                                        <br><br>
+                                        $\mathfrak{u} = \frac{B^2}{2\mu_0} = \frac{\vec{A} \cdot \vec{J}}{2}$     - Magnetic field energy density</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\vec{B} = \frac{\mu_0}{4\pi} \int \frac{I \vec{dl} \times \vec{r}}{r^3} = \frac{\mu_0}{4\pi} \int \frac{\vec{J}(\vec{r'}) \times \widehat{(\vec{r} - \vec{r'})}}{\lVert \vec{r} - \vec{r'} \rVert^2} d^3r'$     - Biot-Savart Law
+                                        <br><br>
+                                        Examples:
+                                        <ul>
+                                            <li>$\vec{B} = \frac{\mu_0I}{2\pi r} \hat{r}$ for infinite wires</li>
+                                            <li>$B = \mu_0 n I$ inside solenoids (direction depends on direction of current)</li>
+                                            <li>$B = \frac{\mu_0 NI}{2\pi r}$ inside toroids (direction depends on direction of current)</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\vec{B} = \nabla \times \vec{A}$ with $\nabla \cdot \vec{A} = 0 \implies \nabla^2 \vec{A} = -\mu_0 \vec{J}$     - Definition of magnetic potential
+
+                                        $\vec{A}(\vec{r'}) = \frac{\mu_0}{4\pi} \int \frac{\vec{J}(\vec{r'})}{\lVert \vec{r} - \vec{r'} \rVert} d^3r' = \frac{\mu_0}{4\pi} \int \frac{I \vec{dl}}{\lVert \vec{r} - \vec{r'} \rVert} = \frac{\mu_0}{4\pi} \int \frac{\vec{K}(\vec{r'})}{\lVert \vec{r} - \vec{r'} \rVert} dA'$
+                                        <br><br>
+                                        Note: $\oint \vec{A} \cdot \vec{dl} = \Phi_B$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magnetic Dipoles
+                                        <ul>
+                                            <li>Multipole Expansion: $\vec{A}(\vec{r}) = \frac{\mu_0 I}{4\pi} \left[ \sum\limits_{n = 0}^\infty \frac{1}{r^{n+1}} \oint (r')^nP_n(\cos(\theta)) \vec{dr'} \right]$ where $P_n(\cos(\theta))$ is the $n^{\textrm{th}}$ Legendre polynomial</li>
+                                            <li>Dipoles:
+                                                <ul>
+                                                    <li>$\vec{A}_{dipole}(\vec{r}) = \frac{\mu_0I}{4\pi} \frac{\vec{m} \times \hat{r}}{r^2}$ where $\vec{m} = \int I \vec{dS} = IS$ (for uniform currents)</li>
+                                                    <li>$\vec{B}_{dipole}(\vec{r}) = \frac{\mu_0(3(\vec{m} \cdot \hat{r})\hat{r} - \vec{m})}{4\pi r^3}$</li>
+                                                    <li>If <span style="font-family:inherit;font-size:inherit;">$m$ is at the origin and in the </span><span style="font-family:inherit;font-size:inherit;">$\hat{z}$ direction, </span><span style="font-family:inherit;font-size:inherit;">$\vec{A}_{dipole}(\vec{r}) = \frac{\mu_0}{4\pi} \frac{m\sin(\theta)}{r^2} \hat{\phi}$ and $\vec{B}_{dipole}(\vec{r}) = \frac{\mu_0m}{4\pi r^3}(2\cos(\theta) \hat{r} + \sin(\theta)) \hat{\theta}$</span></li>
+                                                </ul> </li>
+                                            <li>On one current loop: $\vec{\tau} = \vec{m} \times \vec{B}$ and $\sum \vec{F} = \nabla (\vec{m} \cdot \vec{B})$</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magnetization
+                                        <ul>
+                                            <li>$\vec{M} = \frac{1}{\Delta V} \sum\limits_i \vec{m_i}$     - Magnetization = volume-averaged magnetic dipole moment (on a bar magnet, $\vec{M}$ would point from the north pole to the south pole)</li>
+                                            <li>$\vec{K}_{b} = \vec{M} \times\hat{n}$ with $\vec{K}= \vec{K}_0 + \vec{K}_b$</li>
+                                            <li>$\vec{J}_b = \nabla \times \vec{M}$ with $\vec{J}= \vec{J}_0 + \vec{J}_b$</li>
+                                            <li>$\vec{J}_0 = \nabla \times\vec{H}$ where $\vec{H} = \frac{1}{\mu_0} \vec{B} - \vec{M} = \frac{1}{\chi_m} \vec{M} = \frac{1}{\mu_0(1+\chi_m)}\vec{B}$ is the displacement vector
+                                                <ul>
+                                                    <li>Note: $\mu_0(1+\chi_m)$ is often just called $\mu$ as the magnetic permeability coefficient</li>
+                                                </ul></li>
+                                            <li>$\oint \vec{H} \cdot \vec{dl} = I_0$</li>
+                                            <li>$\oint \vec{B} \cdot \vec{dl} = \mu_0I$     - Ampere's law</li>
+                                            <li>$\vec{J}_b = \chi_m \vec{J}_0$</li>
+                                            <li>$\nabla \cdot \vec{H} = - \nabla \cdot \vec{M} = \vec{B} \cdot (\nabla \frac{1}{\mu})$ at boundaries</li>
+                                            <li>$\int \vec{J}_b d^3r + \int \vec{K}_b dS = 0$     - Conservation of charge</li>
+                                        </ul>
+                                        Clarification: Any terms above involving $\chi_e$ assume we're acting in a linear media
+                                        <br><br>
+                                        Note: Terms like $\vec{K}_0$ and $\vec{J}_0$ above correspond to the free current, and terms like $\vec{K}_b$ and $\vec{J}_b$ correspond to the bias (induced) current. The term $\vec{K}$ or $\vec{J}$ referred to in other equations, such as Ampere's law, on this cheat sheet refer to the total current ($\vec{K} = \vec{K}_0 + \vec{K}_b$ and $\vec{J} = \vec{J}_0 + \vec{J}_b$).
+                                        <br><br>
+                                        Note:
+                                        <ul>
+                                            <li>In paramagnetic materials, $\vec{m} \parallel \vec{B}$ ($\vec{m}$ follows the rising $\nabla \vec{B}$ field) ($\chi_m > 0$)</li>
+                                            <li>In diamagnetic materials, $\vec{m} \upharpoonleft \! \downharpoonright \vec{B}$ ($\vec{m}$ follows the falling $\nabla \vec{B}$ field) ($\chi_m < 0$)</li>
+                                            <li>In ferromagnetic materials, $\vec{m}$ is preserved even after $\vec{B}$ is removed</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boundary Conditions
+                                        <br>
+                                        <img src="../../images/physics/EM-Boundary-Conditions.PNG" alt="EM-Boundary-Conditions" width="144" height="144" />
+                                        <ul>
+                                            <li>$B_1^\bot = B_2^\bot$</li>
+                                            <li>$H_2^\bot - H_1^\bot = -(M_2^\bot - M_1^\bot)$</li>
+                                            <li>$\vec{H}_2^\parallel - \vec{H}_1^\parallel = \vec{K}_0 \times \hat{n}$ (if $M = 0, \frac{1}{\mu_1}\vec{B}_2^\parallel - \frac{1}{\mu_2}\vec{B}_1^\parallel = \vec{K}_0 \times \hat{n}$)</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Electrodynamics</h2>
+                        </div>
+                        <div class="panel-body panel-scroll panel-lg primary-headers">
+                            <table class="table table-hover nice-links" id="electrodynamics">
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td>$\vec{J} = \sigma \vec{f} = \sigma (\vec{E} + \vec{v} \times \vec{B}) \approx \sigma \vec{E}$     - Volume current density (defined so that $I = \int \vec{J} \cdot \vec{dS}$) ($f$ is the force per unit charge)
+                                        <br><br>
+                                        Note: $\vec{f} = \vec{f}_s + \vec{E} \implies \mathcal{E} = \oint \vec{f} \cdot \vec{dl} = \oint \vec{f}_s \cdot \vec{dl}$, where $\vec{f}_s$ is the force per unit charge from the source. For ideal batteries, $\vec{f} = 0 \implies \vec{E} = -\vec{f}_s$.
+                                        <br><br>
+                                        Note: In dynamic situations, the actual volume current density is $\vec{J} = \vec{J}_0 + \vec{J}_b + \vec{J}_p$, where $\vec{J}_p = \frac{\partial \vec{P}}{\partial t}$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maxwell's Equations
+                                        <ul>
+                                            <li>$\oint \vec{E} \cdot \vec{dS} = \frac{Q_{encl}}{\epsilon_0} \implies \nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}$     (in a medium, it often helps to instead use: $\oint \vec{D} \cdot \vec{dS} = Q_{0, encl} \implies \nabla \cdot \vec{D} = \rho_0$)</li>
+                                            <li>$\oint \vec{B} \cdot \vec{dS} = 0 \implies \nabla \cdot \vec{B} = 0$</li>
+                                            <li>$\mathcal{E} = \oint \vec{E} \cdot \vec{dl} = -\frac{\partial \Phi_B}{\partial t} \implies \nabla \times \vec{E} = -\frac{\partial B}{\partial t}$</li>
+                                            <li>$\oint \vec{B} \cdot \vec{dl} = \mu_0 I_{encl} + \mu_0\epsilon_0\frac{\partial \Phi_E}{\partial t} \implies \nabla \times \vec{B} = \mu_0\vec{J} + \mu_0\epsilon_0 \frac{\partial \vec{E}}{\partial t}$     (in a medium, it often helps to instead use: $\oint \vec{H} \cdot \vec{dl} = I_{0, encl} + \frac{\partial \Phi_D}{\partial t}$, where $\Phi_D = \int \vec{D} \cdot \vec{dS}$)</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inductance (for a single loop of wire)
+                                        <ul>
+                                            <li>Mutual Inductance: $\Phi_2 = M_{21}I_1, \mathcal{E}_2 = -\frac{\partial \Phi_2}{\partial t} = -M \frac{dI_1}{dt}$</li>
+                                            <li>Self Inductance: $\Phi = LI, \mathcal{E} = -L \frac{dI}{dt}$</li>
+                                        </ul>
+                                        Note: For multiple loops of wire (ex. toroids, solenoids), multiply the induced EMF by the number of loops</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alfuen's Theorem: 
+                                        <br>
+                                        For a moving loop (with velocity $\vec{v}$): $\frac{\partial \vec{B}}{\partial t} = \frac{1}{\mu_0\sigma}\nabla^2\vec{B} + \nabla \times (\vec{v} \times \vec{B})$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$\vec{S} = \frac{1}{\mu_0} (\vec{E} \times \vec{B})$     - Poynting vector (the power per unit time per unit area [aka intensity] of the EM field)
+                                        <br><br>
+                                        Note: if no work is done on the system, $\frac{\partial \mathfrak{u}}{\partial t} = -\nabla \cdot \vec{S}$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maxwell Stress Tensor
+                                        <ul>
+                                            <li>$T_{xx} = \frac{1}{2}\epsilon_0(E_x^2-E_y^2-E_z^2) + \frac{1}{2\mu_0}(B_x^2-B_y^2-B_z^2)$</li>
+                                            <li>$T_{xy} = \epsilon_0E_xE_y + \frac{1}{\mu_0}B_xB_y$</li>
+                                            <li>$T_{ij}$ = force per area in the $i^{\textrm{th}}$ direction on an element of the surface oriented in the $j^\textrm{th}$ direction</li>
+                                        </ul>
+                                        $\vec{f} = \nabla \cdot \overset\leftrightarrow{T} - \epsilon_0\mu_0\frac{\partial \vec{S}}{\partial t} \implies \vec{F} = \oint_\mathcal{S} \overset\leftrightarrow{T} \cdot \vec{dA} - \epsilon_0\mu_0 \frac{\partial}{\partial t} \int_\mathcal{V} S d^3r$</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Conservation of Momentum
+                                        <ul>
+                                            <li>$\vec{F} = \frac{d\vec{p}_{mech}}{dt} \implies \vec{p} = \int_\mathcal{V} \vec{g} d^3r = \textrm{momentum of the EM field}$ where $\vec{g} = \epsilon_0\mu_0\vec{S} = \epsilon_0 (\vec{E} \times \vec{B})$ is the momentum density for EM fields</li>
+                                            <li>If $\vec{p}_{mech}$ is constant (ex. in empty space), $\frac{\partial \vec{g}}{\partial t} = \nabla \cdot \overset\leftrightarrow{T}$</li>
+                                            <li>$\vec{l} = \vec{r} \times \vec{g} = \epsilon_0 (\vec{r} \times (\vec{E} \times \vec{B}))$      - Angular momentum density of EM fields</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Electromagnetic Waves & Radiation</h2>
+                        </div>
+                        <div class="panel-body panel-scroll panel-lg primary-headers">
+                            <table class="table table-hover nice-links" id="em_waves_radiation">
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td>Wave Equation
+                                        <br><br>
+                                        $\frac{\partial^2 f}{\partial z^2} = \frac{1}{v^2}\frac{\partial^2 f}{\partial t^2} \implies \widetilde{f}(z, t) = \widetilde{A}e^{i(kz-\omega t)} \hat{n}$ for transverse waves ($\hat{n} = \hat{x}$ for horizontal polarization or $\hat{n} = \hat{y}$ for vertical polarization)
+                                        <br><br>
+                                        For light:
+                                        <ul>
+                                            <li>$\nabla^2 f = \frac{1}{v^2}\frac{\partial^2 f}{\partial t^2}$ where $v = \frac{1}{\sqrt{\mu\epsilon}} = \frac{c}{n}$, where $n = \sqrt{\frac{\mu\epsilon}{\mu_0\epsilon_0}} \approx \sqrt{\epsilon_r}$ is the index of refraction (this is because $\mu \approx \mu_0$ for most materials)</li>
+                                            <li>$\vec{\widetilde{E}}(\vec{r}, t) = \widetilde{E}_0e^{i(\vec{k} \cdot \vec{r} - \omega t)} \hat{n}$ and $\vec{E}(\vec{r}, t) = \Re(\vec{\widetilde{E}}(\vec{r}, t))$</li>
+                                            <li>$\vec{\widetilde{B}}(\vec{r}, t) = \frac{1}{v}(\hat{k} \times \vec{\widetilde{E}})$ and $\vec{B}(\vec{r}, t) = \Re(\vec{\widetilde{B}}(\vec{r}, t))$</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wave Energy
+                                        <ul>
+                                            <li>Wave Intensity: $\vec{S} = \frac{1}{\mu_0}(\vec{E} \times \vec{B}) \implies \langle\vec{S}\rangle = \frac{1}{2}c\epsilon_0E_0^2 \hat{z}$</li>
+                                            <li>Wave Energy Density: $\mathfrak{u} = \epsilon_0E_0^2 \implies \langle\mathfrak{u}\rangle = \frac{1}{2}\epsilon_0E_0^2$</li>
+                                            <li>Wave Linear Momentum: $\vec{g} = \frac{1}{c^2}\vec{S} = \frac{\mathfrak{u}}{c} \hat{z} \implies \langle\vec{g}\rangle = \frac{1}{2c}\epsilon_0E_0^2 \hat{z}$</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Radiation Pressure
+                                        <ul>
+                                            <li>$P = \frac{\langle S\rangle}{c}$ for a perfectly absorbing surface</li>
+                                            <li>$P = \frac{2\langle S\rangle}{c}$ for a perfectly reflecting surface</li>
+                                        </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wave Behavior at Boundaries
+                                        <br>
+                                        <img src="../../images/physics/EM-Wave-Boundary.PNG" alt="EM-Wave-Boundary" width="168" height="188" />
+                                        <br><br>
+                                        Boundary Conditions:
+                                        <ul>
+                                            <li>$\epsilon_1E_1^\bot = \epsilon_2E_2^\bot$</li>
+                                            <li>$\vec{E}_1^\parallel = \vec{E}_2^\parallel$</li>
+                                            <li>$B_1^\bot = B_2^\bot$</li>
+                                            <li>$\frac{1}{\mu_1}\vec{B}_1^\parallel = \frac{1}{\mu_2}\vec{B}_2^\parallel \implies \vec{B}_1^\parallel \approx \vec{B}_2^\parallel$</li>
+                                        </ul>
+                                        For all waves:
+                                        <ul>
+                                            <li>$k_1 = k_R = \frac{n_1}{n_2} k_T$</li>
+                                            <li>$\theta_1 = \theta_R$     - Law of Reflection</li>
+                                            <li>$n_1 \sin(\theta_1) = n_2(\theta_2)$     - Law of Refraction (aka Snell's Law)</li>
+                                            <li>The reflected wave undergoes a 180° phase shift if $n_2 > n_1$</li>
+                                        </ul>
+                                        <table class="table table-hover table-bordered nice-links">
+                                            <thead class="table-body">
+                                                <tr>
+                                                    <th>p-polarization ($\vec{B} \parallel \textrm{boundary}$)</th>
+                                                    <th>s-polarization ($\vec{E} \parallel \textrm{boundary}$)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table-body">
+                                                <tr>
+                                                    <td>$R = \left(\frac{E_R}{E_1}\right)^2 = \left(\frac{n_2\cos(\theta_1) - n_1\cos(\theta_2)}{n_2\cos(\theta_1) + n_1\cos(\theta_2)}\right)^2$</td>
+                                                    <td>$R = \left(\frac{E_R}{E_1}\right)^2 = \left(\frac{n_1\cos(\theta_1) - n_2\cos(\theta_2)}{n_1\cos(\theta_1) + n_2\cos(\theta_2)}\right)^2$</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>$T = \frac{n_2}{n_1}\left(\frac{E_T}{E_1}\right)^2\frac{\cos(\theta_2)}{\cos(\theta_1)} = \frac{4n_1n_2\cos(\theta_1)\cos(\theta_2)}{(n_2\cos(\theta_1) + n_1\cos(\theta_2))^2}$</td>
+                                                    <td>$T = \frac{n_2}{n_1}\left(\frac{E_T}{E_1}\right)^2\frac{\cos(\theta_2)}{\cos(\theta_1)} = \frac{4n_1n_2\cos(\theta_1)\cos(\theta_2)}{(n_1\cos(\theta_1) + n_2\cos(\theta_2))^2}$</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!--
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Magnetostatics</h2>
+                        </div>
+                        <div class="panel-body panel-scroll panel-lg primary-headers">
+                            <table class="table table-hover nice-links" id="magnetostatics">
+                                <tbody class="table-body">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="../../js/bootstrap.min.js"></script>
+    </body>
+</html>

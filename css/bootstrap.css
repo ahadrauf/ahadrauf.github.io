@@ -6922,6 +6922,10 @@ button.close {
   font-size: 1.25em;
 }
 
+.table-body {
+    font-size: 1.25em;
+}
+
 ul#error {
     list-style-type: none;
     color: #a94442;
