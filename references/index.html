@@ -48,20 +48,18 @@
     <body>
         <div class="container">
             <div class="page-header">
-                <a href="">
-                    <div class="row">
-                        <table>
-                            <tr>
-                                <td><img src="../images/logo_transparent.png" height="60vh"><td>
-                                <td>
-                                    <h1 height="15vh" class="no_vertical_margins">&nbsp;&nbsp;Ahad Rauf</h1>
-                                    <h3 height="10vh" class="no_vertical_margins">&nbsp;&nbsp;Undergraduate EECS Major, 
-                                        UC Berkeley 2016-20</h3>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </a>
+                <div class="row">
+                    <a href="../">
+                        <div class="col-sm-1">
+                            <img src="../images/logo_transparent.png" height="60vh">
+                        </div>
+                        <div class="col-sm-6">
+                            <h1 height="15vh" class="no_vertical_margins">Ahad Rauf</h1>
+                            <h3 height="10vh" class="no_vertical_margins">Undergraduate EECS Major, 
+                                UC Berkeley 2016-20</h3>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-2">
@@ -81,14 +79,13 @@
                                 <ul class="nav navbar-nav">
                                     <li><a href="../">Home<span class="sr-only">(current)</span></a></li>
                                     <li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="./references/">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="../projects/">
                                             Projects
-                                            <span class="sr-only"> (current)</span>
                                             <span class="caret"></span>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="../references/index.html#the_creator">The Creator</a></li>
-                                            <li><a href="../references/index.html#skrapmeister">Skrapmeister</a></li>
+                                            <li><a href="../projects/#the_creator">The Creator</a></li>
+                                            <li><a href="../projects/#skrapmeister">Skrapmeister</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">
@@ -132,5 +129,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="../js/bootstrap.min.js"></script>
+        <!-- Adds double-click functionality for drop down menus -->
+        <script src="../js/dropdown_menu.js"></script>
     </body>
 </html>
