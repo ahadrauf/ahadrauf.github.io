@@ -6918,6 +6918,11 @@ button.close {
   font-weight: bold;
 }
 
+.panel-body {
+    font-size: 1.25em;
+}
+
+/*
 #table-body {
   font-size: 1.25em;
 }
@@ -6925,6 +6930,7 @@ button.close {
 .table-body {
     font-size: 1.25em;
 }
+*/
 
 ul#error {
     list-style-type: none;
@@ -7002,5 +7008,9 @@ div.pictures img {
 }
 
 .classic {
+    font-size: 1.25em;
+}
+
+.classic_text_size {
     font-size: 1.25em;
 }

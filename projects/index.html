@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Projects | Ahad Rauf</title>
+
+        <!-- File locations (check for every file) -->
+        <?php $HOME = "."; ?>
+        <!-- File locations (relative to the $HOME variable above) -->
+        <?php $IMAGES = "$HOME/images"; ?>
+        <?php $DOWNLOADS = "$HOME/downloads"; ?>
+        <?php $CSS = "$HOME/css"; ?>
+        <?php $JS = "$HOME/js"; ?>
+
+        <!-- <link rel="icon" type="image/png" href="./images/falcon.png"> -->
+        <link rel="icon" type="image/png" href="../images/logo.png">
+
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+        <!-- MathJAX (uncomment the lines below if MathJAX is needed) -->
+        <!--
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { fonts: ["TeX"] }
+        });
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+        -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <div class="row">
+                    <a href="../">
+                        <div class="col-sm-1">
+                            <img src="../images/logo_transparent.png" height="60vh">
+                        </div>
+                        <div class="col-sm-6">
+                            <h1 height="15vh" class="no_vertical_margins">Ahad Rauf</h1>
+                            <h3 height="10vh" class="no_vertical_margins">Undergraduate EECS Major, 
+                                UC Berkeley 2016-20</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="sidebar-nav">
+                        <div class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <!--Add the three horizontal bars onto the button in the collapsed form-->
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <span class="visible-xs navbar-brand">Navigation</span>
+                            </div>
+                            <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="../">Home</a></li>
+                                    <li class="active dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="../references/">
+                                            Projects
+                                            <span class="sr-only"> (current)</span>
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#the_creator">The Creator</a></li>
+                                            <li><a href="#skrapmeister">Skrapmeister</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="../references/">
+                                            References
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../references/math/">Math</a></li>
+                                            <li><a href="../references/electromagnetism/">Electromagnetism</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../pictures/">Pictures</a></li>
+                                    <!--<li><a href="./contact-us/">Contact Me</a></li>-->
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-10 classic_text_size">
+                    <div class="row">
+                        <h1 class="no_vertical_margins">Projects</h1>
+                        
+                        <br>
+                        I'm a big fan of robotics, and I've worked on lots of projects to that end both big and small.
+                        Most of my recent work has been in microrobots and swarm robotics, but I've also worked on
+                        different projects across the field, from robotic grasping to autonomous optical testing
+                        stations. I also enjoy branching out in different sides of the tech stack, and I've done 
+                        projects in areas like computer vision, machine learning, and server management.
+                        
+                        <br><br>
+                        
+                        I've listed some of my favorites below:
+                        <ul>
+                        <li><a href="#the_creator">The Creator - Replicating MEGABLOKS structures using a 
+                            Baxter robotic arm and Microsoft Kinect</a></li>
+                        <li><a href="#skrapmeister">Skrapmeister - A smart trash can for eco-friendly waste
+                            disposal</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="row" id="the_creator">
+                        <h2>The Creator</h2>
+                    
+                        I worked to program a robot to inspect a structure built out of 
+                        <a href="https://www.megabloks.com/en-us/" target="_blank" rel="noopener noreferrer" >MEGABLOKS</a> and autonomously replicate 
+                        the structure. We accomplished this task by using computer vision to generate a computerized 
+                        model of the structure, which we then sent to a Baxter or Sawyer robotic arm to pick and place blocks 
+                        in their respective positions.
+                        <br><br>
+                        
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="../images/the_creator/generic_baxter_gripper.jpg" width="100%">
+                                <div class="caption">
+                                    The Creator setup
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;"> 
+                                    <iframe allowfullscreen="" src="http://player.vimeo.com/video/306379022" 
+                                    frameborder="0" width="500" height="281"></iframe>
+                                </div> 
+                                <div class="caption">
+                                    Demonstration of the Creator building a pyramid
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="../images/the_creator/creator_cv.jpeg" width="100%">
+                            <div class="caption">
+                                A collective graphic of the computer vision setup and processing
+                            </div>
+                        </div>
+                        
+                        <br>
+                        I designed this system as my final project for EECS C106A (Introduction to Robotics) at UC Berkeley,
+                        which generously supplied the Baxter and Sawyer robotic arms for the project.
+                        <br>
+                        <a href="https://the-creator.ml/">See the full project page here!</a>
+                    </div>
+                    
+                    <div class="row" id="skrapmeister">
+                        <h2>Skrapmeister</h2>
+                    
+                        To promote responsible disposal and improve the quality of dorm life, 
+                        I built an interactive trashcan organizer in line with UC Berkeley’s goal of Zero Waste by 2020.
+                        It featured multiple bins for trash, compost, and recycling that could be chosen from via voice
+                        activation. Its enclosed design also works to keep away flies and minimize odors from old trash 
+                        and compost, enhancing the hygiene of college life.
+                        <br><br>
+                        
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="../images/skrapmeister/skrapmeister_overall.jpg" width="100%">
+                                <div class="caption">
+                                    Front view, featuring our laser-cut logo
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <img src="../images/skrapmeister/skrapmeister_top.jpg" width="105%">
+                                <div class="caption">
+                                    Top view, demonstrating our microphone and trash segmentation
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        I designed this system as part of Robotics@Berkeley's competition 
+                        <a href="https://rab.berkeley.edu/programs/dxm/">Dorm Ex Machina</a> in fall 2017, 
+                        where it won the "Most Useful Product" award for its exceptional focus on environmental awareness.
+                    </div>
+                    
+                    <br>  <!-- Bottom spacing -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Gets events in the next 4 weeks for display (disabled) -->
+    <!-- <script src="js/events_list.js"></script> -->
+    </body>
+</html>
